@@ -1,0 +1,915 @@
+// ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top MNC Internships</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --brand: #0066cc;
+            --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            --card-shadow-hover: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background-color: var(--brand);
+            color: white;
+            padding: 30px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        .header h4 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Section Title */
+        h2 {
+            margin-top: 30px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        /* Internship Categories */
+        .category {
+            width: 90%;
+            max-width: 1100px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        .category h3 {
+            margin-bottom: 10px;
+            color: var(--brand);
+        }
+
+        /* Internship Cards */
+        .internship-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .internship-card {
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .internship-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .internship-card h4 {
+            font-size: 1.1rem;
+            color: var(--brand);
+            margin-bottom: 8px;
+        }
+
+        .internship-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 6px 0;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .apply-btn:hover,
+        .apply-btn:focus {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        /* Back / Next controls (use anchors for correct semantics) */
+        .back-button, .next-button {
+            position: fixed;
+            top: 18px;
+            padding: 10px 12px;
+            background-color: rgba(68, 206, 17, 0.85);
+            color: rgb(201, 18, 40);
+            text-decoration: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+            z-index: 9999;
+        }
+
+        .back-button { left: 18px; }
+        .next-button { right: 18px; }
+
+        .back-button:hover, .next-button:hover {
+            background-color: rgba(250, 52, 2, 0.7);
+            color: #fff;
+        }
+
+        /* Small screens */
+        @media (max-width: 520px) {
+            .internship-card { width: 100%; margin: 10px 0; }
+            .category { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="weh.html" class="back-button" role="button" aria-label="Back to previous page">Back</a>
+
+    <!-- Header -->
+    <div class="header" role="banner">
+        <h1>AP ENGINEERS HUB</h1>
+        <h4>Your Gateway to Learning Cybersecurity & Programming</h4>
+    </div>
+
+   <!-- DATA BASE MANAGEMENT Internships Section -->
+<section id="database-management" class="category" aria-labelledby="db-title">
+    <h3 id="db-title">DATABASE MANAGEMENT Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Oracle Database Management Intern</h4>
+            <p><strong>Location:</strong> Redwood City, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>IBM Database Management Intern</h4>
+            <p><strong>Location:</strong> Armonk, NY</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- NETWORKING Internships Section -->
+<section id="networking" class="category" aria-labelledby="net-title">
+    <h3 id="net-title">Networking Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Cisco Networking Intern</h4>
+            <p><strong>Location:</strong> San Jose, CA</p>
+            <p><strong>Duration:</strong> 8 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Juniper Networking Intern</h4>
+            <p><strong>Location:</strong> Sunnyvale, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- DEVOPS AND TESTING Internships Section -->
+<section id="devops-and-testing" class="category" aria-labelledby="devops-title">
+    <h3 id="devops-title">DevOps & Testing Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Amazon DevOps Intern</h4>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Google Testing Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCKCHAIN DEVELOPMENT Internships Section -->
+<section id="blockchain-development" class="category" aria-labelledby="blockchain-title">
+    <h3 id="blockchain-title">Blockchain Development Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Google Blockchain Development Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Microsoft Blockchain Development Intern</h4>
+            <p><strong>Location:</strong> Redmond, WA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- WEB DEVELOPMENT Internships Section -->
+<section id="web-development" class="category" aria-labelledby="web-title">
+    <h3 id="web-title">Web Development Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Meta (Facebook) Web Development Intern</h4>
+            <p><strong>Location:</strong> Menlo Park, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Amazon Web Development Intern</h4>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- DATA SCIENCE AND ANALYTICS Internships Section -->
+<section id="data-science-and-analytics" class="category" aria-labelledby="data-title">
+    <h3 id="data-title">Data Science & Analytics Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Netflix Data Science Intern</h4>
+            <p><strong>Location:</strong> Los Gatos, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Google Data Science Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- ARTIFICIAL INTELLIGENCE Internships Section -->
+<section id="artificial-intelligence" class="category" aria-labelledby="ai-title">
+    <h3 id="ai-title">Artificial Intelligence Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Google AI Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>OpenAI AI Intern</h4>
+            <p><strong>Location:</strong> San Francisco, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- CYBER SECURITY Internships Section -->
+<section id="cyber-security" class="category" aria-labelledby="cyber-title">
+    <h3 id="cyber-title">Cyber Security Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Palo Alto Networks Cyber Security Intern</h4>
+            <p><strong>Location:</strong> Santa Clara, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Fortinet Cyber Security Intern</h4>
+            <p><strong>Location:</strong> Sunnyvale, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- SOFTWARE DEVELOPMENT Internships Section -->
+<section id="software-development" class="category" aria-labelledby="soft-title">
+    <h3 id="soft-title">Software Development Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Microsoft Software Development Intern</h4>
+            <p><strong>Location:</strong> Redmond, WA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Apple Software Development Intern</h4>
+            <p><strong>Location:</strong> Cupertino, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- CLOUD ARCHITECTURE Internships Section -->
+<section id="cloud-architecture" class="category" aria-labelledby="cloud-title">
+    <h3 id="cloud-title">Cloud Architecture Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>AWS Cloud Architecture Intern</h4>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Google Cloud Architecture Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- SAP Internships Section -->
+<section id="sap" class="category" aria-labelledby="sap-title">
+    <h3 id="sap-title">SAP Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>SAP Intern</h4>
+            <p><strong>Location:</strong> Walldorf, Germany</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Accenture SAP Intern</h4>
+            <p><strong>Location:</strong> Chicago, IL</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- Remaining sections with placeholders -->
+<section id="other-sections" class="category">
+    <h3>Other Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Coming Soon</h4>
+            <p>More internship categories will be added soon.</p>
+        </div>
+        <div class="internship-card">
+            <h4>Contact Us</h4>
+            <p>If you'd like a specific company/category listed, contact us.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Top MNC Internships. All Rights Reserved.</p>
+    </footer>
+
+<script>
+/* Apply button handler: prompts for name & email, then composes a mailto (opens user's mail client).
+   - Uses buttons (not anchors) for correct semantics.
+   - Prevents use of non-ASCII ellipsis; contains explicit logic.
+*/
+document.querySelectorAll('.apply-btn').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const card = e.target.closest('.internship-card');
+    if (!card) return;
+    const internshipName = card.querySelector('h4')?.textContent?.trim() || 'Internship';
+
+    const name = window.prompt("Enter your full name:");
+    if (!name) {
+      window.alert("Registration cancelled: name is required.");
+      return;
+    }
+
+    const email = window.prompt("Enter your email address:");
+    if (!email) {
+      window.alert("Registration cancelled: email is required.");
+      return;
+    }
+
+    // Simple email format check
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailValid) {
+      window.alert("Please enter a valid email address.");
+      return;
+    }
+
+    // Compose default mailto to open user's email client
+    const subject = `Internship Registration: ${internshipName}`;
+    const body = `Name: ${name}\nEmail: ${email}\nPosition: ${internshipName}\n\nI would like to register for this internship.`;
+    const mailto = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Show confirmation then open mail client
+    const proceed = window.confirm(`Register for "${internshipName}" with name "${name}" and email "${email}"?`);
+    if (proceed) {
+      window.location.href = mailto;
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+// ...existing code...
+```// filepath: c:\Users\chall\OneDrive\Desktop\datastructures\NexGenU\1.html
+// ...existing code...
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top MNC Internships</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --brand: #0066cc;
+            --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            --card-shadow-hover: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            background-color: var(--brand);
+            color: white;
+            padding: 30px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin: 0;
+        }
+
+        .header h4 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Section Title */
+        h2 {
+            margin-top: 30px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        /* Internship Categories */
+        .category {
+            width: 90%;
+            max-width: 1100px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        .category h3 {
+            margin-bottom: 10px;
+            color: var(--brand);
+        }
+
+        /* Internship Cards */
+        .internship-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .internship-card {
+            background-color: #fff;
+            border: 1px solid #e6e6e6;
+            border-radius: 8px;
+            width: 250px;
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .internship-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .internship-card h4 {
+            font-size: 1.1rem;
+            color: var(--brand);
+            margin-bottom: 8px;
+        }
+
+        .internship-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 6px 0;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .apply-btn:hover,
+        .apply-btn:focus {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+            font-size: 0.9em;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        /* Back / Next controls (use anchors for correct semantics) */
+        .back-button, .next-button {
+            position: fixed;
+            top: 18px;
+            padding: 10px 12px;
+            background-color: rgba(68, 206, 17, 0.85);
+            color: rgb(201, 18, 40);
+            text-decoration: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease;
+            z-index: 9999;
+        }
+
+        .back-button { left: 18px; }
+        .next-button { right: 18px; }
+
+        .back-button:hover, .next-button:hover {
+            background-color: rgba(250, 52, 2, 0.7);
+            color: #fff;
+        }
+
+        /* Small screens */
+        @media (max-width: 520px) {
+            .internship-card { width: 100%; margin: 10px 0; }
+            .category { padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="weh.html" class="back-button" role="button" aria-label="Back to previous page">Back</a>
+
+    <!-- Header -->
+    <div class="header" role="banner">
+        <h1>AP ENGINEERS HUB</h1>
+        <h4>Your Gateway to Learning Cybersecurity & Programming</h4>
+    </div>
+
+   <!-- DATA BASE MANAGEMENT Internships Section -->
+<section id="database-management" class="category" aria-labelledby="db-title">
+    <h3 id="db-title">DATABASE MANAGEMENT Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Oracle Database Management Intern</h4>
+            <p><strong>Location:</strong> Redwood City, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>IBM Database Management Intern</h4>
+            <p><strong>Location:</strong> Armonk, NY</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- NETWORKING Internships Section -->
+<section id="networking" class="category" aria-labelledby="net-title">
+    <h3 id="net-title">Networking Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Cisco Networking Intern</h4>
+            <p><strong>Location:</strong> San Jose, CA</p>
+            <p><strong>Duration:</strong> 8 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Juniper Networking Intern</h4>
+            <p><strong>Location:</strong> Sunnyvale, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- DEVOPS AND TESTING Internships Section -->
+<section id="devops-and-testing" class="category" aria-labelledby="devops-title">
+    <h3 id="devops-title">DevOps & Testing Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Amazon DevOps Intern</h4>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Google Testing Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCKCHAIN DEVELOPMENT Internships Section -->
+<section id="blockchain-development" class="category" aria-labelledby="blockchain-title">
+    <h3 id="blockchain-title">Blockchain Development Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Google Blockchain Development Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Microsoft Blockchain Development Intern</h4>
+            <p><strong>Location:</strong> Redmond, WA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- WEB DEVELOPMENT Internships Section -->
+<section id="web-development" class="category" aria-labelledby="web-title">
+    <h3 id="web-title">Web Development Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Meta (Facebook) Web Development Intern</h4>
+            <p><strong>Location:</strong> Menlo Park, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Amazon Web Development Intern</h4>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- DATA SCIENCE AND ANALYTICS Internships Section -->
+<section id="data-science-and-analytics" class="category" aria-labelledby="data-title">
+    <h3 id="data-title">Data Science & Analytics Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Netflix Data Science Intern</h4>
+            <p><strong>Location:</strong> Los Gatos, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Google Data Science Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- ARTIFICIAL INTELLIGENCE Internships Section -->
+<section id="artificial-intelligence" class="category" aria-labelledby="ai-title">
+    <h3 id="ai-title">Artificial Intelligence Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Google AI Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>OpenAI AI Intern</h4>
+            <p><strong>Location:</strong> San Francisco, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- CYBER SECURITY Internships Section -->
+<section id="cyber-security" class="category" aria-labelledby="cyber-title">
+    <h3 id="cyber-title">Cyber Security Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Palo Alto Networks Cyber Security Intern</h4>
+            <p><strong>Location:</strong> Santa Clara, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Fortinet Cyber Security Intern</h4>
+            <p><strong>Location:</strong> Sunnyvale, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- SOFTWARE DEVELOPMENT Internships Section -->
+<section id="software-development" class="category" aria-labelledby="soft-title">
+    <h3 id="soft-title">Software Development Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Microsoft Software Development Intern</h4>
+            <p><strong>Location:</strong> Redmond, WA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Apple Software Development Intern</h4>
+            <p><strong>Location:</strong> Cupertino, CA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- CLOUD ARCHITECTURE Internships Section -->
+<section id="cloud-architecture" class="category" aria-labelledby="cloud-title">
+    <h3 id="cloud-title">Cloud Architecture Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>AWS Cloud Architecture Intern</h4>
+            <p><strong>Location:</strong> Seattle, WA</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Google Cloud Architecture Intern</h4>
+            <p><strong>Location:</strong> Mountain View, CA</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- SAP Internships Section -->
+<section id="sap" class="category" aria-labelledby="sap-title">
+    <h3 id="sap-title">SAP Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>SAP Intern</h4>
+            <p><strong>Location:</strong> Walldorf, Germany</p>
+            <p><strong>Duration:</strong> 12 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+        <div class="internship-card">
+            <h4>Accenture SAP Intern</h4>
+            <p><strong>Location:</strong> Chicago, IL</p>
+            <p><strong>Duration:</strong> 10 weeks</p>
+            <button class="apply-btn" type="button">Register</button>
+        </div>
+    </div>
+</section>
+
+<!-- Remaining sections with placeholders -->
+<section id="other-sections" class="category">
+    <h3>Other Internships</h3>
+    <div class="internship-list">
+        <div class="internship-card">
+            <h4>Coming Soon</h4>
+            <p>More internship categories will be added soon.</p>
+        </div>
+        <div class="internship-card">
+            <h4>Contact Us</h4>
+            <p>If you'd like a specific company/category listed, contact us.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Top MNC Internships. All Rights Reserved.</p>
+    </footer>
+
+<script>
+/* Apply button handler: prompts for name & email, then composes a mailto (opens user's mail client).
+   - Uses buttons (not anchors) for correct semantics.
+   - Prevents use of non-ASCII ellipsis; contains explicit logic.
+*/
+document.querySelectorAll('.apply-btn').forEach(button => {
+  button.addEventListener('click', (e) => {
+    const card = e.target.closest('.internship-card');
+    if (!card) return;
+    const internshipName = card.querySelector('h4')?.textContent?.trim() || 'Internship';
+
+    const name = window.prompt("Enter your full name:");
+    if (!name) {
+      window.alert("Registration cancelled: name is required.");
+      return;
+    }
+
+    const email = window.prompt("Enter your email address:");
+    if (!email) {
+      window.alert("Registration cancelled: email is required.");
+      return;
+    }
+
+    // Simple email format check
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailValid) {
+      window.alert("Please enter a valid email address.");
+      return;
+    }
+
+    // Compose default mailto to open user's email client
+    const subject = `Internship Registration: ${internshipName}`;
+    const body = `Name: ${name}\nEmail: ${email}\nPosition: ${internshipName}\n\nI would like to register for this internship.`;
+    const mailto = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Show confirmation then open mail client
+    const proceed = window.confirm(`Register for "${internshipName}" with name "${name}" and email "${email}"?`);
+    if (proceed) {
+      window.location.href = mailto;
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+// ...existing code...
